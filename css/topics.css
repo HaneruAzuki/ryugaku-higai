@@ -1,0 +1,34 @@
+.base-panel {
+    display: flex;
+}
+.topic-list-panel {
+   text-indent: -1em;
+   font-size: 0.9em;
+   box-sizing: border-box;
+   width: 30%;
+   padding-left: 5px;
+}
+
+.content-panel {
+    box-sizing: border-box;
+    width: 70%;
+    padding: 10px;
+}
+
+
+.content-panel > div > h3 {
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.content-panel > div {
+    margin: 10px 0;
+    background-color: var(--white-alternative);
+}
+
+.content-panel > a {
+    display: block;
+    margin-top: calc(-1 * var(--header-height-full));
+    padding-top: var(--header-height-full);
+}

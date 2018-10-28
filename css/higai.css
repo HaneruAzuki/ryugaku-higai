@@ -1,0 +1,76 @@
+.base-panel {
+    display: flex;
+}
+
+ .content-panel {
+    box-sizing: border-box;
+    width: 80%;
+    padding-left: 10px;
+}
+
+/* タブメニュー */
+.tab-panel {
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.tab-panel ul {
+    top: 20%;
+    position: sticky;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+}
+.tab-panel li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.tab-panel li a{
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    display: block;
+    border-bottom: 1px solid var(--white-alternative);
+    background-color: var(--theme-color-navy);
+    text-decoration: none;
+    color: var(--white-alternative);
+    text-align: center;
+    font-size: 14px;
+}
+.tab-panel ul > li:hover > a{
+    color: var(--color-black);
+    background-color: var(--white-alternative);
+}
+
+/* 選択タブ */
+.selected-tab {
+    color: var(--color-black) !important;
+    background-color: var(--white-alternative) !important;
+}
+
+.tab-content01 {
+    background-color: #e6ffe9;
+    display: none;
+}
+
+.tab-content02 {
+    background-color: #ffffee;
+    display: none;
+}
+
+.tab-content03 {
+    background-color: #eeffff;
+    display: none;
+}
+
+.tab-content04 {
+     background-color: #ffeeff;
+     display: none;
+}
+
+/* 表示コンテンツ */
+.selected-content {
+    display: block !important;
+}

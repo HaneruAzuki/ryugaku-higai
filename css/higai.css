@@ -10,44 +10,48 @@
 
 /* タブメニュー */
 .tab-panel {
-    box-sizing: border-box;
     width: 20%;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.tab-panel > div {
+    position: sticky;
+    top: 15%;
+    text-align: center;
+}
+
+.tab-panel div .menu-title {
+    margin: 0;
+    border-bottom: 2px solid var(--color-black);
 }
 
 .tab-panel ul {
-    top: 20%;
-    position: sticky;
     padding: 0;
     margin: 0;
-    text-align: center;
     list-style-type: none;
 }
+
 .tab-panel li {
-    display: inline;
     padding: 0;
     margin: 0;
 }
+
 .tab-panel li a{
     width: 100%;
-    padding: 15px 0;
     margin: 0;
-    display: block;
-    border-bottom: 1px solid var(--white-alternative);
-    background-color: var(--theme-color-navy);
     text-decoration: none;
-    color: var(--white-alternative);
-    text-align: center;
-    font-size: 14px;
+    font-size: 20px;
+    color: var(--theme-color-navy);
 }
 .tab-panel ul > li:hover > a{
-    color: var(--color-black);
-    background-color: var(--white-alternative);
+    border-bottom: 1.5px solid var(--theme-color-navy);
 }
 
 /* 選択タブ */
 .selected-tab {
-    color: var(--color-black) !important;
-    background-color: var(--white-alternative) !important;
+    font-weight: bold;
+    border-bottom: 1.5px solid var(--theme-color-navy) !important;
 }
 
 .tab-content01 {

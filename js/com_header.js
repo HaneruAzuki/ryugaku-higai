@@ -1,12 +1,14 @@
-var header_title = document.getElementById('header-title');
-var dist = 40;
-
-function hideTitle() {
-    if (dist < document.documentElement.scrollTop || document.body.scrollTop) {
-        header_title.style.display = "none";
-    } else {
-        header_title.style.display = "block";
-    }
-}
-
-window.onscroll = hideTitle;
+$(function(){
+    var header_title = $('#header-title');
+    var dist = 40;
+    
+    header_title.show();
+    
+    $(window).scroll(function(){
+        if($(this).scrollTop() > dist){
+            header_title.hide();
+        }else{
+            header_title.show();
+        }
+    });
+});

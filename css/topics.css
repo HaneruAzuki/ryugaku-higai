@@ -32,3 +32,34 @@
     margin-top: calc(-1 * var(--header-height-full));
     padding-top: var(--header-height-full);
 }
+
+
+/* Page Topボタン */
+#page-top-button {
+    position: fixed;
+    bottom: 10px;
+    right: 30%;
+    width: 100px;
+    height: 50px;
+    background-color: var(--theme-color-navy);
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+#page-top-button a {
+  display: flex;
+  z-index: 999;
+  width: 100px;
+  height: 50px;
+  color: var(--white-alternative);
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-top-button:hover {
+  opacity: 0.8;
+}

@@ -5,7 +5,7 @@ $(function(){
         var topic_num = ('00' + i).slice(-2);
         $('#topic-' + topic_num).load('./contents/topics/topics_' + topic_num + '.html');
     }
-})
+});
 
 
 //Page Topボタン

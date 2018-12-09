@@ -27,7 +27,7 @@
     background-color: var(--white-alternative);
 }
 
-.content-panel > a {
+.content-panel .anchor {
     display: block;
     margin-top: calc(-1 * var(--header-height-full));
     padding-top: var(--header-height-full);

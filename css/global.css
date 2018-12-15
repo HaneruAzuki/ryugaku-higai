@@ -40,15 +40,17 @@ body {
 header {
     position: fixed;
     width: 100%;
+    top: 0;
+}
+.header-title {
     text-align: center;
     min-width: var(--center-min-width);
     color: var(--theme-color-navy);
     background-color: var(--theme-color-azure);
-    top: 0;
 }
 
 h1 {
-    font-size: 24pt;
+    font-size: 20pt;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -78,7 +80,7 @@ h3 {
     background-color: var(--theme-color-navy);
 }
 
-.header-clapse {
+.menu-opaque {
     opacity: 0.8;
 }
 

@@ -161,6 +161,7 @@ p {
 footer {
     margin-top: 5px;
     border-top: 2px solid var(--black-alternative);
+    font-size: 1.6rem;
     min-width: var(--center-min-width);
     margin-right: auto;
     margin-left: auto;

@@ -55,22 +55,22 @@
 }
 
 .tab-content01 {
-    background-color: #e6ffe9;
+    background-color: var(--white-alternative);
     display: none;
 }
 
 .tab-content02 {
-    background-color: #ffffee;
+    background-color: var(--white-alternative);
     display: none;
 }
 
 .tab-content03 {
-    background-color: #eeffff;
+    background-color: var(--white-alternative);
     display: none;
 }
 
 .tab-content04 {
-     background-color: #ffeeff;
+     background-color: var(--white-alternative);
      display: none;
 }
 

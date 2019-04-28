@@ -6,8 +6,7 @@
 --black-alternative: #000033;
 --white-alternative: #f8f8ff;
 
---center-max-width: 900px;
---center-min-width: 700px;
+--center-min-width: 360px;
 }
 
 html {
@@ -29,21 +28,28 @@ html {
     background-color: var(--theme-color-azure);
 }
 
+
 /* ヘッダー共通設定 */
 header {
     position: fixed;
+    right: 0;
+    left: 0;
     width: 100%;
     top: 0;
+    min-width: var(--center-min-width);
 }
 .header-title {
     text-align: center;
-    min-width: var(--center-min-width);
     color: var(--theme-color-navy);
     background-color: var(--theme-color-azure);
 }
 
+#sub-title {
+  display: none;
+}
+
 h1 {
-    font-size: 3.0rem;
+    font-size: 2.4rem;
     word-break: keep-all;
     margin-top: 0;
     margin-bottom: 0;
@@ -55,14 +61,14 @@ h1 a {
 }
 
 h2 {
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -73,62 +79,73 @@ p {
 /* ヘッダーメニュー*/
 /* メインメニュー */
 
-.smp-header-menu {
+.header-menu {
   display: none;
 }
 
-.header-menu {
+.smp-header-menu {
     min-width: var(--center-min-width);
     background-color: var(--theme-color-navy);
 }
-.header-menu .label {
+.smp-header-menu .label {
     display: none;
 }
 .menu-opaque {
     opacity: 0.85;
 }
-.header-menu ul {
+.smp-header-menu ul {
     padding: 0;
     margin: 0;
     text-align: center;
 }
-.header-menu ul > li{
+.smp-header-menu ul > li{
     display: inline-block;
+
 }
-.header-menu ul > li > a{
+.smp-header-menu ul > li > a{
     display: block;
-    padding: 15px 15px;
+    padding: 5px 5px;
     font-size: 1.8rem;
     color: var(--white-alternative);
     text-decoration:none;
 }
-.header-menu ul > li:hover > a{
+.smp-header-menu ul > li:hover > a {
     color: var(--black-alternative);
     background-color: var(--white-alternative);
 }
 
+.smp-header-menu ul.smp-header-menu2 > li > a{
+    display: block;
+    padding: 5px 5px;
+    background-color: var(--theme-color-orange);
+    border-radius: 10px;
+    font-size: 1.8rem;
+    color: var(--white-alternative);
+    text-decoration:none;
+}
+
 /* サブメニュー */
-.header-menu ul li ul{
+.smp-header-menu ul li ul{
     display: none;
 }
-.header-menu ul li:hover ul{
+.smp-header-menu ul li:hover ul{
     display: block;
 }
-.header-menu ul li ul{
+.smp-header-menu ul li ul{
     position: absolute;
     padding:0;
 }
-.header-menu ul li ul li{
+.smp-header-menu ul li ul li{
     display: block;
     text-align: left;
     background-color: var(--theme-color-navy);
     border-bottom:1px solid var(--white-alternative);
 }
-.header-menu ul li .header-menu ul li a{
+.smp-header-menu ul li .smp-header-menu ul li a{
     text-decoration:none;
     color: var(--white-alternative);
 }
-.header-menu ul li ul li a:hover{
+.smp-header-menu ul li ul li a:hover{
     color: var(--black-alternative);
     background-color: var(--white-alternative);
 }
@@ -144,7 +161,6 @@ p {
 footer {
     margin-top: 5px;
     border-top: 2px solid var(--black-alternative);
-    max-width: var(--center-max-width);
     min-width: var(--center-min-width);
     margin-right: auto;
     margin-left: auto;
@@ -154,7 +170,6 @@ footer {
 footer .footer_updt{
     text-align: right;
 }
-
 
 /* Page Topボタン */
 #page-top-button {
@@ -173,8 +188,8 @@ footer .footer_updt{
 }
 
 #page-top-button img{
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 #page-top-button:hover {

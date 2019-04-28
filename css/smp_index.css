@@ -1,5 +1,9 @@
 .main-panel {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.anchor{
+  display: block;
 }
 
 /* セカンダリーメニュー*/
@@ -27,30 +31,15 @@
     font-size: 1.8rem;
 }
 .secondary-menu ul > li:hover > a{
-    color: var(--black-alternative);
+    color: var(--color-black);
     background-color: var(--white-alternative);
-}
-
-.base-panel {
-    display: flex;
-}
-
-.main-panel {
-    box-sizing: border-box;
-    width: 70%;
-    padding: 10px;
-}
- .sub-panel {
-    box-sizing: border-box;
-    width: 30%;
-    padding-left: 5px;
 }
 
 .label {
     text-align: center;
     margin: 0;
     margin-top: 5px;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: var(--theme-color-orange);
@@ -62,8 +51,8 @@
 }
 
 .box-srcollbar {
-    overflow: auto;
-    height: 40vh;
+    overflow: hidden;
+    height: 30vh;
     padding: 5px 5px 5px 1em;
     font-size: 1.6rem;
     text-indent: -1em;

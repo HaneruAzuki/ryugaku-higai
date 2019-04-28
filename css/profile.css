@@ -1,12 +1,12 @@
 .main-table {
     width: 100%;
     border-collapse: collapse;
-    border: solid 1px var(--color-black);
+    border: solid 1px var(--black-alternative);
 }
 
 /*セルの設定*/
 .main-table td {
-    border: solid 1px var(--color-black);
+    border: solid 1px var(--black-alternative);
 }
 
 /*第1カラムの設定*/

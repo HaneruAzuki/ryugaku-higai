@@ -2,19 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>高校交換留学被害者集まれ！</title>
+        <title>交換留学 被害者集まれ！</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="./css/global.css">
-        <link rel="stylesheet" type="text/css" href="./css/index.css">
-
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
-
-        <!-- JavaScript -->
-        <script type="text/javascript" src="./js/com_header.js"></script>
-        <script type="text/javascript" src="./js/com_footer.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" type="text/css" href="./css/global.css" media="screen and (min-width:600px)">
+        <link rel="stylesheet" type="text/css" href="./css/index.css" media="screen and (min-width:600px)">
+        <link rel="stylesheet" type="text/css" href="./css/smp_global.css" media="screen and (max-width:600px)">
+        <link rel="stylesheet" type="text/css" href="./css/smp_index.css" media="screen and (max-width:600px)">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -22,11 +17,12 @@
     <body>
         <header>
             <div class="header-title">
-                <h1>高校交換留学 被害者集まれ！</h1>
-                <h2 id="sub-title">～ 言葉だけが一人歩きしている日本の国際化・グローバル人材の育成を問う ～</h2>
+                <div><h1><a href="/">交換留学 被害者集まれ！</a></h1><div id="smp-menu-btn"></div></div>
+                <h2 id="sub-title">～ 言葉だけが一人歩きしている日本の国際化・グローバル人材育成を問う ～</h2>
             </div>
 
             <div class="header-menu">
+                <p class="label">メニュー</p>
                 <ul>
                     <li><a href="./higai.html">▼被害の実態</a>
                         <ul class="sub-menu">
@@ -36,8 +32,8 @@
                             <li><a href="./higai.html?tab_content04">対処・将来のために</a></li>
                         </ul>
                     </li>
-                    <li><a href="./assen.html">留学斡旋団体とは</a></li>
-                    <li><a href="./oyako.html">何も知らない日本の親子</a></li>
+                    <li><a href="./assen.html">留学斡旋団体</a></li>
+                    <li><a href="./oyako.html">日本の親子</a></li>
                     <li><a href="https://blogs.yahoo.co.jp/kokoko37kokoko" target="_blank">▼投稿</a>
                         <ul class="sub-menu">
                             <li><a href="https://blogs.yahoo.co.jp/kokoko37kokoko" target="_blank">投稿する</a></li>
@@ -45,6 +41,21 @@
                         </ul>
                     </li>
                     <li><a href="mailto:mariko.tenma&#64;gmail.com">相談窓口</a></li>
+                </ul>
+            </div>
+            <div class="smp-header-menu">
+                <ul>
+                    <li><a href="./higai.html">被害</a>
+                    </li>
+                    <li><a href="./assen.html">留学団体</a></li>
+                    <li><a href="./oyako.html">日本の親子</a></li>
+                    <li><a href="#popular_page">投稿</a></li>
+                </ul>
+                <ul class="smp-header-menu2">
+                    <li><a href="#topics">トピックス</a></li>
+                    <li><a href="#popular_page">人気ページ</a></li>
+                    <li><a href="mailto:mariko.tenma&#64;gmail.com">相談</a></li>
+
                 </ul>
             </div>
         </header>
@@ -146,8 +157,9 @@
                     </p>
                 </div>
                 <div class="sub-panel">
+                    <a id="topics" class="anchor"></a>
                     <div class="topics">
-                        <p class="label">トピックス</p>
+                        <a class="topics-label" href="/.topics.html"><p class="label">トピックス</p></a>
                         <div class="box-srcollbar">
                             <p>・<a href="./topics.html#topic-26">アメリカで17歳のドイツ人交換留学生が再び銃の犠牲に その②</a></p>
                             <p>・<a href="./topics.html#topic-25">アメリカで17歳のドイツ人交換留学生が再び銃の犠牲に その①</a></p>
@@ -178,11 +190,12 @@
                         </div>
                     </div>
                     <div class="secondary-menu">
+                        <a id="popular_page" class="anchor"></a>
                         <p class="label">人気ページ</p>
                         <ul>
                             <li><a href="./profile.html">管理人プロフィール</a></li>
                             <li><a href="./alt.html">誰も知らないALTのこと</a></li>
-                            <li><a href="./eigo.html">純ジャパの子供が英ペラに</a></li>
+                            <li><a href="./eigo.html">純ジャパの子が英ペラに</a></li>
                         </ul>
                     </div>
                     <div class="other-links">
@@ -202,5 +215,13 @@
         <footer>
              <div id="com_footer"></div>
         </footer>
+
+        <!-- PageTopボタン -->
+        <div id="page-top-button"><a href><img src="./img/page_top_icon.png" alt="page_top_icon.png"></img></a></div>
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+        <script type="text/javascript" src="./js/common.js"></script>
     </body>
 </html>

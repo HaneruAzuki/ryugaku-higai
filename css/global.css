@@ -144,6 +144,7 @@ p {
 footer {
     margin-top: 5px;
     border-top: 2px solid var(--black-alternative);
+    font-size: 1.8rem;
     max-width: var(--center-max-width);
     min-width: var(--center-min-width);
     margin-right: auto;

@@ -1,31 +1,3 @@
-/* ヘッダーのマージン高さ設定 */
-$(window).on('load resize scroll', function(){
-  var margin_height=$('header').outerHeight(true);
-  $('.header-margin').css('height', margin_height);
-  $('.anchor').css({'padding-top': margin_height, 'margin-top': -margin_height});
-});
-
-var window_smp = 600;
-var dist = 40;
-
-$(function(){
-    header_menu=$('[class$="header-menu"]');
-    header_sub_title=$('#sub-title');
-
-    $(window).scroll(function(){
-        var windowWidth = $(window).width();
-        if($(this).scrollTop() > dist){
-            header_menu.addClass("menu-opaque");
-            header_sub_title.hide();
-        }else{
-            header_menu.removeClass("menu-opaque");
-            if(window_smp <= windowWidth){
-                header_sub_title.show();
-            }
-        }
-    });
-});
-
 //PageTopボタン
 $(function(){
     var topBtn=$('#page-top-button');

@@ -1,22 +1,19 @@
 .base-panel {
-    display: flex;
-}
-.topic-list-panel{
-   order:1;
-   width: 30%;
-   padding-left: 5px;
+    font-size: 1.6rem;
 }
 
-.content-panel {
-    order:0;
-    box-sizing: border-box;
-    width: 70%;
-    padding: 10px;
+.topic-list-panel {
+    font-size: 1.4rem;
 }
 
 .topic-list-panel p {
     padding-left: 1em;
     text-indent: -1em;
+}
+
+.content-panel {
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .content-panel > div > h3 {
@@ -33,7 +30,7 @@
 .label {
     text-align: center;
     margin: 5px 0 0;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: var(--theme-color-orange);

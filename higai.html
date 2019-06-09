@@ -5,16 +5,9 @@
         <title>被害の実態</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="./css/global.css">
-        <link rel="stylesheet" type="text/css" href="./css/higai.css">
-
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
-
-        <!-- JavaScript -->
-        <script type="text/javascript" src="./js/com_header.js"></script>
-        <script type="text/javascript" src="./js/com_footer.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" type="text/css" href="./css/global.css" media="screen and (min-width:600px)">
+        <link rel="stylesheet" type="text/css" href="./css/smp_global.css" media="screen and (max-width:600px)">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -28,9 +21,9 @@
 
             <div class="header-menu">
                 <ul>
-                    <li><a href="./index.html">TopPage</a></li>
-                    <li><a href="./assen.html">留学斡旋団体とは</a></li>
-                    <li><a href="./oyako.html">何も知らない日本の親子</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./assen.html">留学斡旋団体</a></li>
+                    <li><a href="./oyako.html">日本の親子</a></li>
                     <li><a href="https://blogs.yahoo.co.jp/kokoko37kokoko" target="_blank">▼投稿</a>
                         <ul class="sub-menu">
                             <li><a href="https://blogs.yahoo.co.jp/kokoko37kokoko" target="_blank">投稿する</a></li>
@@ -39,28 +32,37 @@
                     </li>
                     <li><a href="#contact_info">相談窓口</a></li>
                 </ul>
+                <ul class="header-menu2">
+                    <li><a href="#">事例</a></li>
+                    <li><a href="#tab_content02">背景</a></li>
+                    <li><a href="#tab_content03">問題点</a></li>
+                    <li><a href="#tab_content04">対処・将来</a></li>
+                </ul>
+            </div>
+            <div class="smp-header-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./assen.html">留学団体</a></li>
+                    <li><a href="./oyako.html">日本の親子</a></li>
+                    <li><a href="mailto:mariko.tenma&#64;gmail.com">相談</a></li>
+                </ul>
+                <ul class="smp-header-menu2">
+                    <li><a href="#">事例</a></li>
+                    <li><a href="#tab_content02">背景</a></li>
+                    <li><a href="#tab_content03">問題点</a></li>
+                    <li><a href="#tab_content04">対処</a></li>
+                </ul>
             </div>
         </header>
 
         <div class="header-margin">
             <!-- header分のマージン-->
         </div>
-
         <section>
             <div class="base-panel">
-                <div id="tab_panel" class="tab-panel">
-                    <div>
-                        <p class="menu-title">コンテンツ</p>
-                        <ul>
-                            <li><a class="menu-tab" href="#tab_content01">事例</a></li>
-                            <li><a class="menu-tab" href="#tab_content02">背景</a></li>
-                            <li><a class="menu-tab" href="#tab_content03">問題点</a></li>
-                            <li><a class="menu-tab" href="#tab_content04">対処・将来</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="content_panel" class="content-panel">
-                    <div id="tab_content01" class="tab-content tab-content01">
+                <div class="main-panel">
+                    <a id="tab_content01" class="anchor"></a>
+                    <div class="tab-content">
                         <h3>≪実際にあった被害やトラブル事例≫</h3>
                         <p>以下の事例から、本人にはまったく責任の無いことで子供がトラブルに巻き込まれていることがわかります。高校生の交換留学制度が、大人の無知と無責任から当初の理念を失い、本来の機能を果たせていないことが原因だといえます。</p>
                         <p>(注)当サイトに寄せられた被害報告および相談、私が実際に経験したものや見聞きしたもの、元斡旋団体員、留学関係者からの情報です。重複を避けるため、よく似た事例は代表的なものだけにしました。なお、情報提供があっても信頼度に欠けるもの、相談者が掲載を望まないもの、サイト上での公開がためらわれる内容については除いています。</p>
@@ -122,7 +124,8 @@
                         <P>https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1112730216</p>
                         <p>※他にもこんなことがあったと投稿欄（匿名可）に書いてみませんか。投稿内容に信頼性があると判断できたものについては、被害事例として掲載することができます。本人は交換留学をしていなくても、知人や友人もしくは親類が交換留学していたときに被害に遭った話を知っている方からの参加もお待ちしています。個人的に情報提供あるいは相談を希望される場合は、相談窓口をご利用ください。</p>
                     </div>
-                    <div id="tab_content02" class="tab-content tab-content02">
+                    <a id="tab_content02" class="anchor"></a>
+                    <div class="tab-content">
                         <h3>≪被害やトラブルが知らされないその背景≫</h3>
                         <p>
                             　イメージ的には非常に開放的な響きのある高校生の「交換留学」ですが、極端に閉鎖的な環境のもとで運営されているため、
@@ -191,7 +194,8 @@
                         <p>・交換留学の期間は1学年間（約10ヶ月間）なので、帰国してしまうと少々のトラブルや被害の場合はあきらめるか、忘れたことにしてしまう。</p>
                         <p>・団体に対し、正当な権利として慰謝料(見舞金）を要求するのではなく、口止め料として受け取る親がいるので被害が外部に知らされない。</p>
                     </div>
-                    <div id="tab_content03" class="tab-content tab-content03">
+                    <a id="tab_content03" class="anchor"></a>
+                    <div class="tab-content">
                         <h3>高校交換留学における被害と問題点</h3>
                         <p>
                             　高校交換留学で最もトラブルが多いのは、有償ボランティアのホストファミリーにおいてです。
@@ -323,7 +327,8 @@
                             (※3）<a href="http://www.mext.go.jp/b_menu/shingi/chukyo/chukyo4/020/gijiroku/08062407.htm" target="_blank">留学生特別委員会（第9回）議事録より一部抜粋 文部科学省報道資料</a>(←すでに削除されています)<br>
                         </p>
                     </div>
-                    <div id="tab_content04" class="tab-content tab-content04">
+                    <a id="tab_content04" class="anchor"></a>
+                    <div class="tab-content">
                         <h3>≪トラブルに対処するために≫</h3>
                         <p>
                             　出発前にいろいろあったとしても、保護者の多くは団体が信用できないものだと思っていないため、
@@ -511,7 +516,14 @@
         <footer>
              <div id="com_footer"></div>
         </footer>
+
+        <!-- PageTopボタン -->
+        <div id="page-top-button"><a href><img src="./img/page_top_icon.png" alt="page_top_icon.png" /></a></div>
+
         <!-- JavaScript -->
-        <script type="text/javascript" src="./js/higai.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+        <script type="text/javascript" src="./js/common.js"></script>
+
     </body>
 </html>

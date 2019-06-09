@@ -31,7 +31,6 @@ html {
 
 /* ヘッダー共通設定 */
 header {
-    position: fixed;
     width: 100%;
     top: 0;
 }
@@ -70,6 +69,14 @@ p {
   margin: 0;
 }
 
+.base-panel {
+   font-size: 1.8rem;
+}
+
+.anchor{
+ display: block;
+}
+
 /* ヘッダーメニュー*/
 /* メインメニュー */
 
@@ -81,12 +88,7 @@ p {
     min-width: var(--center-min-width);
     background-color: var(--theme-color-navy);
 }
-.header-menu .label {
-    display: none;
-}
-.menu-opaque {
-    opacity: 0.85;
-}
+
 .header-menu ul {
     padding: 0;
     margin: 0;

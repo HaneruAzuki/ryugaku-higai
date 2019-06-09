@@ -5,15 +5,9 @@
         <title>誰も知らないALT</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="./css/global.css">
-
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
-
-        <!-- JavaScript -->
-        <script type="text/javascript" src="./js/com_footer.js"></script>
-        <script type="text/javascript" src="./js/com_header.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" type="text/css" href="./css/global.css" media="screen and (min-width:600px)">
+        <link rel="stylesheet" type="text/css" href="./css/smp_global.css" media="screen and (max-width:600px)">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -27,16 +21,19 @@
 
             <div class="header-menu">
                 <ul>
-                    <li><a href="./index.html">TopPage</a></li>
+                    <li><a href="./index.html">HOME</a></li>
                     <li><a href="./profile.html">管理人プロフィール</a></li>
                     <li><a href="./eigo.html">純ジャパの子供が英ペラに</a></li>
                 </ul>
             </div>
-        </header>
-
-        <div class="header-margin">
-            <!-- header分のマージン-->
-        </div>
+            <div class="smp-header-menu">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./profile.html">管理人</a></li>
+                    <li><a href="./eigo.html">純ジャパが英ペラに</a></li>
+                </ul>
+            </div>
+    </header>
 
         <section>
             <div class="base-panel">
@@ -180,5 +177,14 @@
         <footer>
              <div id="com_footer"></div>
         </footer>
+
+        <!-- PageTopボタン -->
+        <div id="page-top-button"><a href><img src="./img/page_top_icon.png" alt="page_top_icon.png" /></a></div>
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+        <script type="text/javascript" src="./js/common.js"></script>
+
     </body>
 </html>
